@@ -19,6 +19,11 @@ public class DistanceConverter {
             System.out.println("Enter your choice (1, 2, or 3): ");
             Scanner sc = new Scanner(System.in);
             int choice = sc.nextInt();
+            if (choice<1 || choice > 3){
+                System.out.println("No such element");
+                System.out.println("Enter your choice (1, 2, or 3: ");
+                choice = sc.nextInt();
+            }
             switch  (choice){
                 case 1:
                     System.out.println("Enter distance in kilometers: ");
