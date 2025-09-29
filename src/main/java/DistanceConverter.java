@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class DistanceConverter {
     public static void main(String[] args) {
-        
+
         // Requirements:
         // - Menu with options: 1. Convert Miles to Kilometers, 2. Convert Kilometers to Miles, 3. Exit
         // - Loop until user chooses to exit
@@ -9,15 +9,15 @@ public class DistanceConverter {
         // - Display conversion results
         // - Handle invalid menu choices
         Scanner sc = new Scanner(System.in);
-        System.out.println("------Menu------");
-        System.out.println("1. Convert Miles to Kilometers ");
-        System.out.println("2. Convert Kilometers to Miles ");
-        System.out.println("3. Exit ");
-        System.out.println("Enter your choice (1, 2, or 3): ");
         int choice = sc.nextInt();
         boolean j = true;
         while(j)
         {
+            System.out.println("------Menu------");
+            System.out.println("1. Convert Miles to Kilometers ");
+            System.out.println("2. Convert Kilometers to Miles ");
+            System.out.println("3. Exit ");
+            System.out.println("Enter your choice (1, 2, or 3): ");
             switch  (choice){
                 case 1:
                     System.out.println("Enter distance in kilometers: ");
