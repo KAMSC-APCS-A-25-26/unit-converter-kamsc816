@@ -8,8 +8,7 @@ public class DistanceConverter {
         // - Use conversion factor: 1 mile = 1.60935 kilometers
         // - Display conversion results
         // - Handle invalid menu choices
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
+
         boolean j = true;
         while(j)
         {
@@ -18,6 +17,8 @@ public class DistanceConverter {
             System.out.println("2. Convert Kilometers to Miles ");
             System.out.println("3. Exit ");
             System.out.println("Enter your choice (1, 2, or 3): ");
+            Scanner sc = new Scanner(System.in);
+            int choice = sc.nextInt();
             switch  (choice){
                 case 1:
                     System.out.println("Enter distance in kilometers: ");
