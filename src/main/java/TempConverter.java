@@ -32,23 +32,17 @@ public class TempConverter {
                     System.out.println();
                     System.out.println("Conversion Results:");
                     System.out.println("Fahrenheit: " + km);
-                    km = (km-32) * (5/9);
+                    km = (km-32) * ((double) 5 /9);
                     System.out.println("Celsius: " + km);
                     System.out.println();
-                    System.out.println("Enter your choice (1, 2, or 3): ");
-                    choice = sc.nextInt();
-                    break;
                 case 2:
                     System.out.println("Enter temperature in Celsius: ");
                     double miles = sc.nextDouble();
                     System.out.println();
                     System.out.println("Conversion Results: ");
                     System.out.println("Celsius: " + miles);
-                    miles = miles * (9/5) +32;
+                    miles = miles * ((double) 9 /5) +32;
                     System.out.println("Fahrenheit+ " + miles);
-                    System.out.println();
-                    System.out.println("Enter your choice (1, 2, or 3): ");
-                    choice = sc.nextInt();
                     break;
                 case 3:
                     System.out.println("Goodbye!");
