@@ -9,21 +9,21 @@ public class TempConverter {
         // - Use formulas: C = (F - 32) * 5/9 and F = C * 9/5 + 32
         // - Display conversion results
         // - Handle invalid menu choices
-
+        Scanner sc = new Scanner(System.in);
         boolean j = true;
         while(j)
         {
-            System.out.println("------Menu------");
+            System.out.println("Choose conversion direction");
             System.out.println("1. Convert Fahrenheit to Celsius ");
             System.out.println("2. Convert Celsius to Fahrenheit ");
             System.out.println("3. Exit ");
             System.out.println("Enter your choice (1, 2, or 3): ");
-            Scanner sc = new Scanner(System.in);
+
             int choice = sc.nextInt();
             if (choice<1 || choice > 3){
-                System.out.println("No such element");
-                System.out.println("Enter your choice (1, 2, or 3: ");
-                choice = sc.nextInt();
+                System.out.println("Invalid choice");
+                System.out.println("Please enter 1, 2, or 3");
+                continue;
             }
             switch  (choice){
                 case 1:
@@ -35,6 +35,7 @@ public class TempConverter {
                     km = (km-32) * ((double) 5 /9);
                     System.out.println("Celsius: " + km);
                     System.out.println();
+                    break;
                 case 2:
                     System.out.println("Enter temperature in Celsius: ");
                     double miles = sc.nextDouble();
@@ -42,7 +43,7 @@ public class TempConverter {
                     System.out.println("Conversion Results: ");
                     System.out.println("Celsius: " + miles);
                     miles = miles * ((double) 9 /5) +32;
-                    System.out.println("Fahrenheit+ " + miles);
+                    System.out.println("Fahrenheit: " + miles);
                     break;
                 case 3:
                     System.out.println("Goodbye!");
