@@ -34,6 +34,7 @@ public class TempConverter {
                     System.out.println("Fahrenheit: " + km);
                     km = (km-32) * (5/9);
                     System.out.println("Celsius: " + km);
+                    System.out.println();
                     System.out.println("Enter your choice (1, 2, or 3): ");
                     choice = sc.nextInt();
                     break;
@@ -45,6 +46,7 @@ public class TempConverter {
                     System.out.println("Celsius: " + miles);
                     miles = miles * (9/5) +32;
                     System.out.println("Fahrenheit+ " + miles);
+                    System.out.println();
                     System.out.println("Enter your choice (1, 2, or 3): ");
                     choice = sc.nextInt();
                     break;

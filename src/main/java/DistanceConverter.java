@@ -33,6 +33,7 @@ public class DistanceConverter {
                     System.out.println("Kilometers: " + km);
                     km /= 1.609;
                     System.out.println("Miles: " + km);
+                    System.out.println();
                     System.out.println("Enter your choice (1, 2, or 3): ");
                     choice = sc.nextInt();
                     break;
@@ -44,6 +45,7 @@ public class DistanceConverter {
                     System.out.println("Miles: " + miles);
                     miles *= 1.609;
                     System.out.println("Kilometers + " + miles);
+                    System.out.println();
                     System.out.println("Enter your choice (1, 2, or 3): ");
                     choice = sc.nextInt();
                     break;
