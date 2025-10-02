@@ -1,4 +1,4 @@
-# TimeConverter
+ # TimeConverter
 
 A Java application that converts time components (hours, minutes, seconds) into total seconds with interactive looping functionality.
 
